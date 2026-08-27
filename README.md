@@ -4,7 +4,7 @@ Shared [Homebrew](https://brew.sh) tap for **li-nd** macOS apps.
 
 This is a **personal tap**, not the official [`Homebrew/homebrew-cask`](https://github.com/Homebrew/homebrew-cask) repository.
 
-Homebrew may require trusting the tap once before install (`brew trust li-nd/apps`). Apps currently target **macOS Tahoe** and newer (matches each app’s deployment target).
+Homebrew may require trusting the tap once before install (`brew trust li-nd/apps`). Minimum macOS varies by app (see each cask’s `depends_on macos:`).
 
 ## Install NativePass
 
@@ -54,6 +54,27 @@ brew upgrade --cask backapp
 brew uninstall --cask backapp
 ```
 
+## Install Proxy Checker for Mac
+
+```bash
+brew tap li-nd/apps
+brew trust li-nd/apps   # required by Homebrew for third-party taps
+brew install --cask proxychecker
+```
+
+Docs: [https://proxychecker.developer.pm](https://proxychecker.developer.pm)  
+Source: [https://github.com/li-nd/proxy-checker-for-mac](https://github.com/li-nd/proxy-checker-for-mac)
+
+Requires **macOS Sonoma** or newer.
+
+### Upgrade / uninstall
+
+```bash
+brew update
+brew upgrade --cask proxychecker
+brew uninstall --cask proxychecker
+```
+
 ### Gatekeeper / signing
 
 Current builds are **ad-hoc signed and not notarized**. On first launch macOS may block the app.
@@ -71,6 +92,7 @@ This tap does **not** claim App Store or official Homebrew Cask compliance.
 |------|-----|
 | `nativepass` | [NativePass](https://github.com/li-nd/NativePass) |
 | `backapp` | [BackApp](https://github.com/li-nd/BackApp) |
+| `proxychecker` | [Proxy Checker for Mac](https://github.com/li-nd/proxy-checker-for-mac) |
 
 ## Adding another app
 
