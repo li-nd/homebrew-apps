@@ -96,6 +96,27 @@ brew upgrade --cask bip39chiper
 brew uninstall --cask bip39chiper
 ```
 
+## Install ZeroAway
+
+```bash
+brew tap li-nd/apps
+brew trust li-nd/apps   # required by Homebrew for third-party taps
+brew install --cask zeroaway
+```
+
+Docs: [https://zeroaway.developer.pm](https://zeroaway.developer.pm)  
+Source: [https://github.com/li-nd/ZeroAway](https://github.com/li-nd/ZeroAway)
+
+Requires **macOS Sonoma** or newer. **Accessibility** permission is required (System Settings → Privacy & Security → Accessibility).
+
+### Upgrade / uninstall
+
+```bash
+brew update
+brew upgrade --cask zeroaway
+brew uninstall --cask zeroaway
+```
+
 ### Gatekeeper / signing
 
 Current builds are **ad-hoc signed and not notarized**. On first launch macOS may block the app.
@@ -115,6 +136,7 @@ This tap does **not** claim App Store or official Homebrew Cask compliance.
 | `backapp` | [BackApp](https://github.com/li-nd/BackApp) |
 | `proxychecker` | [Proxy Checker for Mac](https://github.com/li-nd/proxy-checker-for-mac) |
 | `bip39chiper` | [Bip39Chiper](https://github.com/li-nd/bip39-chiper-mac) |
+| `zeroaway` | [ZeroAway](https://github.com/li-nd/ZeroAway) |
 
 ## Adding another app
 
