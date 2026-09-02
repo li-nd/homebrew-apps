@@ -1,6 +1,6 @@
 cask "zeroaway" do
-  version "1.0.0"
-  sha256 "df3dd84f8768c1826904353db54c194a7454e3e523ae16bf4533f7e80ec830ef"
+  version "1.1.0"
+  sha256 "c6b09ea37e940d944dfb0c9259605edb62e01c516cc958c82fcb1bb4235b7300"
 
   url "https://github.com/li-nd/ZeroAway/releases/download/v#{version}/ZeroAway-#{version}.zip"
   name "ZeroAway"
