@@ -1,6 +1,6 @@
 cask "nativepass" do
-  version "1.1.0"
-  sha256 "7a9387d146822d98fb6af883c9d45cf22ed9ff3a4a4938ae56e330113a614b70"
+  version "1.2.0"
+  sha256 "b9a322572e8105f9a7679a83ff5b63e6c40447a4c1dfa9c35ca2a331ae48c672"
 
   url "https://github.com/li-nd/NativePass/releases/download/v#{version}/NativePass-#{version}-macos.zip"
   name "NativePass"
